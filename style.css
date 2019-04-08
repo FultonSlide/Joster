@@ -1,0 +1,245 @@
+/*Style sheet for Web Application Development Assignment 1 by William Qoro*/
+
+#container {}
+
+#header {
+	position: absolute;
+	top: 0;
+	font-family: Roboto;
+	padding: 1px;
+	margin: -8px;
+	left: 6px;
+	width: 100%;
+	background: linear-gradient(90deg, #0CD7D0, #09A7A1, #09A7A1, #09A7A1, #0CD7D0);
+	/*opacity: 0.9;*/
+	color: #008080;
+	text-align: center;
+}
+
+#header a {
+	text-decoration: none;
+	color: white;
+}
+
+.heading {
+	transition: 0.3s ease;
+	font-family: 'IBM Plex Sans Condensed';
+	font-size: 45px;
+	letter-spacing: 5px;
+}
+
+#body {
+	background: silver;
+	font-family: Roboto;
+	margin: 180px auto;
+	padding: 10px;
+	height: 50%;
+	width: 30%;
+	text-align: center;
+	vertical-align: center;
+	border-style: solid;
+	border-width: 3px;
+}
+
+#links a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(10%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 100%;
+	}
+}
+
+#body {
+	animation: 0.3s ease-out 0s 1 slideInFromBottom;	
+}
+
+/*.select1:hover {
+	color: #008080;
+	text-decoration: underline;
+	display: inline-block;
+	transform: scale(1.03);
+}*/
+
+.select1 {
+  transition: 0.3s ease;
+  background: #09A7A1;
+  color: white;
+  text-decoration: none;
+  border-top: 2px solid #09A7A1;
+  border-bottom: 2px solid #09A7A1;
+  padding: 5px 0;
+  margin: 0;
+  position: relative;
+  right: 55px;
+}
+
+.select1:hover {
+  border-top: 2px solid #008080;
+  border-bottom: 2px solid #008080;
+  padding: 3px 0; 
+}
+
+.divide1 {
+	position: relative;
+	right: 25px;
+}
+
+/*.select2:hover {
+	color: #008080;
+	text-decoration: underline;
+	display: inline-block;
+	transform: scale(1.03);
+}*/
+
+.select2 {
+  transition: 0.3s ease;
+  background: #09A7A1;
+  color: white;
+  text-decoration: none;
+  border-top: 2px solid #09A7A1;
+  border-bottom: 2px solid #09A7A1;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.select2:hover {
+  border-top: 2px solid #008080;
+  border-bottom: 2px solid #008080;
+  padding: 3px 0; 
+}
+
+.divide2 {
+	position: relative;
+	left: 25px;
+}
+
+/*.select3:hover {
+	color: #008080;
+	text-decoration: underline;
+	display: inline-block;
+	transform: scale(1.03);
+}*/
+
+.select3 {
+  position: relative;
+  left: 55px;
+  transition: 0.3s ease;
+  background: #09A7A1;
+  color: white;
+  text-decoration: none;
+  border-top: 2px solid #09A7A1;
+  border-bottom: 2px solid #09A7A1;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.select3:hover {
+  border-top: 2px solid #008080;
+  border-bottom: 2px solid #008080;
+  padding: 3px 0; 
+}
+
+.highlights {
+	color: #008080;
+}
+
+img {
+	width: 150px;
+}
+
+#logo {
+	position: absolute;
+	float: left;
+	margin: -5px;
+	top: -1px;
+	padding: 10px;
+	size: 50px;
+}
+
+#footer a {
+	color: white;
+	text-decoration: none;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	right: 0;
+	width: 100%;
+	color: #008080;
+	height: 60px;
+	text-align: center;
+	font-family: Roboto;
+	background: linear-gradient(90deg, #0CD7D0, #0ABFB8, #09A7A1, #0ABFB8, #0CD7D0);
+}
+
+.bottom-divide1 {
+	position: relative;
+	right: 25px;
+}
+
+.bottom-divide2 {
+	position: relative;
+	left: 25px;
+}
+
+.return-butt {
+  transition: 0.3s ease;
+  background: #09A7A1;
+  color: white;
+  text-decoration: none;
+  border-top: 2px solid #09A7A1;
+  border-bottom: 2px solid #09A7A1;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.return-butt:hover {
+  border-top: 2px solid #008080;
+  border-bottom: 2px solid #008080;
+  padding: 3px 0; 
+}
+
+.form-title {
+	font-size: 20px;
+	padding: 5px;
+}
+
+.body-text {
+	color: #008080;
+}
+
+.text-black {
+	color: black;
+}
+
+.return-form {
+	transition: 0.3s ease;
+  	background: silver;
+  	color: white;
+  	text-decoration: none;
+  	border-top: 2px solid silver;
+  	border-bottom: 2px solid silver;
+  	padding: 5px 0;
+  	margin: 0;
+}
+
+.return-form:hover {
+  border-top: 2px solid #008080;
+  border-bottom: 2px solid #008080;
+  padding: 3px 0; 
+}
+
+.disc-cont {
+	width: 450px;
+}
