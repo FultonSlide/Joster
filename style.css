@@ -1,53 +1,69 @@
 /*Style sheet for Web Application Development Assignment 1 by William Qoro*/
+* {
+	margin: 0;
+	padding: 0;
+}
+#container {			 /*Wraps the entire page between the <body></body> tags*/
+  	position: relative;
+  	min-height: 100vh;
+}
 
-#container {}
+#content-wrap {			/*Wraps the everything between the bottom of the <body> tag and above the #footer*/
+ 	padding-bottom: 50px;
+}
 
-#header {
+#footer {				/*Wraps the content at the bottom of the page*/
 	position: absolute;
+  	width: 100%;
+  	height: 50px;
+
+}
+
+#header {				/*Styles the header bar, creates a linear color gradient across it, changes the font, and sets the internal color of elements to teal.*/
+	position: relative;
 	top: 0;
 	font-family: Roboto;
-	padding: 1px;
-	margin: -8px;
-	left: 6px;
+	padding-top: 10px;
+	padding-bottom: 15px;
 	width: 100%;
 	background: linear-gradient(90deg, #0CD7D0, #09A7A1, #09A7A1, #09A7A1, #0CD7D0);
-	/*opacity: 0.9;*/
 	color: #008080;
 	text-align: center;
 }
 
-#header a {
+#header a {           /*Strips the h1 tags link of its default link underline and blue font color.*/
 	text-decoration: none;
 	color: white;
 }
 
-.heading {
-	transition: 0.3s ease;
+.heading { 			/*Changes the h1 font and adjusts its font size and letter spacing.*/
 	font-family: 'IBM Plex Sans Condensed';
 	font-size: 45px;
 	letter-spacing: 5px;
 }
 
-#body {
-	background: silver;
+#body{ 				/*Creates the gray body box that wraps the content of all the pages.*/
+	position: relative;
+	padding: 30px;
+	margin: 30px auto;
+	position: relative;
 	font-family: Roboto;
-	margin: 180px auto;
-	padding: 10px;
-	height: 50%;
-	width: 30%;
 	text-align: center;
+	height: 100%;
+	width: 40%;
 	vertical-align: center;
+	background: silver;
 	border-style: solid;
 	border-width: 3px;
 }
 
-#links a {
+#links a { 				/*Strips the links in the header of there default underline and blue font color*/
 	color: white;
 	text-decoration: none;
 	text-align: center;
 }
 
-@keyframes slideInFromBottom {
+@keyframes slideInFromBottom { /*Creates keyframes that at the load up of a page slides in an element from 10% down of its y value up to its 0% y value as well as fading in its opacity.*/
 	0% {
 		transform: translateY(10%);
 		opacity: 0;
@@ -58,119 +74,97 @@
 	}
 }
 
-#body {
+#body {						/*Applies the keyframse animation to the body for a 0.3s animation that eases-out to 0s for 1 iteration.*/
 	animation: 0.3s ease-out 0s 1 slideInFromBottom;	
 }
 
-/*.select1:hover {
-	color: #008080;
-	text-decoration: underline;
-	display: inline-block;
-	transform: scale(1.03);
-}*/
-
-.select1 {
+.select1 { 					/*Applies styling and a transition for the page links hover animation.*/
   transition: 0.3s ease;
   background: #09A7A1;
   color: white;
   text-decoration: none;
   border-top: 2px solid #09A7A1;
   border-bottom: 2px solid #09A7A1;
-  padding: 5px 0;
+  padding: 3px 0;
   margin: 0;
   position: relative;
-  right: 55px;
+  right: 75px;
 }
 
-.select1:hover {
+.select1:hover {           /*Creates the lines coming up and down onto the page links when you hover over them.*/
   border-top: 2px solid #008080;
   border-bottom: 2px solid #008080;
-  padding: 3px 0; 
+  padding: 1px 0; 
 }
 
-.divide1 {
+.divide1 {               /*Styles the seperators between the page links for style.*/
 	position: relative;
-	right: 25px;
+	right: 40px;
 }
 
-/*.select2:hover {
-	color: #008080;
-	text-decoration: underline;
-	display: inline-block;
-	transform: scale(1.03);
-}*/
-
-.select2 {
+.select2 {               /*Same as select1 but for the nect page link along*/
   transition: 0.3s ease;
   background: #09A7A1;
   color: white;
   text-decoration: none;
   border-top: 2px solid #09A7A1;
   border-bottom: 2px solid #09A7A1;
-  padding: 5px 0;
+  padding: 3px 0;
   margin: 0;
 }
 
 .select2:hover {
   border-top: 2px solid #008080;
   border-bottom: 2px solid #008080;
-  padding: 3px 0; 
+  padding: 1px 0; 
 }
 
 .divide2 {
 	position: relative;
-	left: 25px;
+	left: 40px;
 }
-
-/*.select3:hover {
-	color: #008080;
-	text-decoration: underline;
-	display: inline-block;
-	transform: scale(1.03);
-}*/
 
 .select3 {
   position: relative;
-  left: 55px;
   transition: 0.3s ease;
   background: #09A7A1;
   color: white;
   text-decoration: none;
   border-top: 2px solid #09A7A1;
   border-bottom: 2px solid #09A7A1;
-  padding: 5px 0;
+  padding: 3px 0;
   margin: 0;
+  left: 75px;
 }
 
 .select3:hover {
   border-top: 2px solid #008080;
   border-bottom: 2px solid #008080;
-  padding: 3px 0; 
+  padding: 1px 0; 
 }
 
-.highlights {
+.highlights {       /*Colors certain words of the index pages description to draw the eye and for pleasing color contrast*/
 	color: #008080;
 }
 
-img {
-	width: 150px;
+img {				/*Sets the top left Joster logos width.*/
+	width: 110px;
 }
 
-#logo {
+#logo {             /*Sets the top left Joster logos position on the page*/
 	position: absolute;
 	float: left;
-	margin: -5px;
-	top: -1px;
+	margin: -10px;
+	top: -7px;
 	padding: 10px;
-	size: 50px;
 }
 
-#footer a {
+#footer a {        /*Strips the footers links of their default underline and blue font*/
 	color: white;
 	text-decoration: none;
 }
 
-#footer {
+#footer {          /*Sets the footers position on the page so it adjusts with the viewport and styles it with some more linear color gradient and Roboto google font.*/
 	position: absolute;
 	bottom: 0;
 	margin: 0;
@@ -183,63 +177,63 @@ img {
 	background: linear-gradient(90deg, #0CD7D0, #0ABFB8, #09A7A1, #0ABFB8, #0CD7D0);
 }
 
-.bottom-divide1 {
+.bottom-divide1 {   /*Sets the position of the seperators of the home link inside the footer*/
 	position: relative;
 	right: 25px;
 }
 
-.bottom-divide2 {
+.bottom-divide2 {	/*Sets the position of the seperators of the home link inside the footer*/
 	position: relative;
 	left: 25px;
 }
 
-.return-butt {
+.return-butt {		/*Styles and animates the return to home button in the footer for the same on hover affect as the page links*/
   transition: 0.3s ease;
   background: #09A7A1;
   color: white;
   text-decoration: none;
   border-top: 2px solid #09A7A1;
   border-bottom: 2px solid #09A7A1;
-  padding: 5px 0;
+  padding: 3px 0;
   margin: 0;
 }
 
 .return-butt:hover {
   border-top: 2px solid #008080;
   border-bottom: 2px solid #008080;
-  padding: 3px 0; 
+  padding: 1px 0; 
 }
 
-.form-title {
+.form-title {      /*Basic positioning and styling for the title of the job posting form.*/ 
 	font-size: 20px;
 	padding: 5px;
 }
 
-.body-text {
+.body-text {       /*Styles some of the words in the job postings so they have a teal color for added color contrast and so its easier for the user to read.*/
 	color: #008080;
 }
 
-.text-black {
+.text-black {      /*Styles certain text to black.*/
 	color: black;
 }
 
-.return-form {
+.return-form {    /*Styles and animates the return to search button on the job search returned forms to be like the page links*/
 	transition: 0.3s ease;
   	background: silver;
   	color: white;
   	text-decoration: none;
   	border-top: 2px solid silver;
   	border-bottom: 2px solid silver;
-  	padding: 5px 0;
+  	padding: 3px 0;
   	margin: 0;
 }
 
 .return-form:hover {
   border-top: 2px solid #008080;
   border-bottom: 2px solid #008080;
-  padding: 3px 0; 
+  padding: 1px 0; 
 }
 
-.disc-cont {
-	width: 450px;
+.disc-cont {    /*Sets the width of the screenshot of my discussion contribution on the about.php page*/
+	width: 35%;
 }
